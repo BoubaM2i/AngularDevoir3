@@ -8,7 +8,15 @@ import { FormBuilder, FormGroup, Validators } from '@angular/forms';
 })
 export class FormulaireComponent implements OnInit {
 
-  users : any[] = []
+  users : any[] = [
+    {
+      nom : "Boubacar",
+      prenom : "DEMBELE",
+      email : "boubacar@dembele.fr",
+      telephone : "0658256895",
+      entreprise : "Société"
+    }
+  ]
 
   user : FormGroup = this.formBuilder.group({
     nom : ["", [Validators.required,Validators.minLength(2)]],

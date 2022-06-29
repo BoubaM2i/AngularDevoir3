@@ -29,22 +29,21 @@
 </form>
 
 
-<div *ngFor="let user of users "> 
+<span *ngFor="let user of users "> 
     
 
 
     <div class="background">
 
         <div class="card-header">
-            {{[user.nom]}}
+            {{[user.entreprise]}}
             
             <div class="card">
                 <div class="name">
-                   <p> Prénom : {{[user.prenom]}}  </p>
+                   <p> {{[user.prenom]}} {{user.nom}}  </p>
                 </div>
 
                 <div class="info">
-                    <p> Entreprise : {{ [user.entreprise] }}</p>
                     <p>Adresse email : {{ [user.email] }}</p>
                     <p>Numéro de Téléphone : {{ [user.telephone] }}</p>
                   </div>
@@ -58,7 +57,7 @@
 
 </div>
 
-</div>
+</span>
 
 
 
